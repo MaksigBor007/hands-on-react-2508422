@@ -5,8 +5,8 @@ class Welcome extends React.Component {
     super(props);
   }
   render() {
-    return <h1>Meet the { this.props.name }</h1>;
-   }
+    return <h1>Meet the {this.props.name}</h1>;
+  }
 }
 
 const Hello = (props) => {
@@ -19,12 +19,15 @@ function App() {
     <div className="container">
       <article>
         <hgroup>
+
           <img src="images/group.svg" alt="StarGazers Group" />
           <Welcome name="Stars" />
           <Hello name="StarGazers" />
           <p>Members of an <b>intergalactic alliance</b><br />
             paving the way for peace and benevolence among all species. They are known for their enthusiasm for science, for their love of fun, and their dedication to education.</p>
-          <button className="outline" onClick={() => alert('Hi there')}>Click Me</button>
+          <button className="outline" onClick={() => alert('HELLO HELLO')}>Click Me</button>
+          <button className="outline2" onClick={() => alert('NEXT BUTTON IS DONE')}>Click Me Now</button>
+
         </hgroup>
       </article>
     </div>
